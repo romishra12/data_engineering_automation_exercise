@@ -16,8 +16,8 @@ for row in rows:
     if row['Latitude'] and row['Longitude']:
         latitude = float(row['Latitude'])
         longitude = float(row['Longitude'])
-        resolution = 5
-        row['h3_cell_id'] = h3.latlng_to_cell(latitude, longitude, 3)
+        resolution = 7
+        row['h3_cell_id'] = h3.latlng_to_cell(latitude, longitude, resolution)
 
 with open("data.csv", "w", newline="") as f:
     new_fieldnames = columns + ['h3_cell_id']
