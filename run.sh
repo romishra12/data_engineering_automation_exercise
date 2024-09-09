@@ -1,2 +1,2 @@
 #curl "https://www.google.com/maps/d/kml?mid=1SJVOiniy-JAtO3Um-Tyyk3gvC1GET7s&forcekml=1" --output data.kml
-ogr2ogr earthquakes.parquet gr data.parquet "/vsicurl/https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/USGS_Seismic_Data_v1/FeatureServer/0/query?f=geojson&where=1%3D1&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=mag%20DESC&outSR=3857&resultOffset=0&resultRecordCount=10000"
+ogr2ogr data.parquet "/vsicurl/https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/USGS_Seismic_Data_v1/FeatureServer/0/query?f=geojson&where=1%3D1&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=mag%20DESC&outSR=3857&resultOffset=0&resultRecordCount=10000"
