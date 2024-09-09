@@ -1,1 +1,1 @@
-curl "https://cmr.earthdata.nasa.gov/search/collections.csv?data_center=ASF&page_size=2000" -- output data.csv
+curl "https://overpass-api.de/api/interpreter?data=%5Bout%3Acsv%28%27name%27%2C%3A%3Alat%2C%3A%3Along%2C%27cuisine%27%2Ctrue%3B%27%2C%27%29%5D%3B%0A%0Aarea%0A%20%20%5B%22wikidata%22%3D%22Q23768%22%5D%0A%20%20%5B%22name%22%3D%22Las%20Vegas%22%5D-%3E.a%3B%0A%0Anwr%5B%22amenity%22%20%3D%20%22restaurant%22%5D%28area.a%29%3B%0A%0A%2F%2F%20calculate%20centroid%20of%20ways%0Aout%20body%20center%3B" -- output data.csv
